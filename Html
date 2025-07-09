@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>موقع محمد صلاح</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #111;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #00adb5;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .link-btn:hover {
+            background-color: #007b7f;
+        }
+
+        img.main-img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        ul {
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body id="body" style="background-image: url('https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif');">
+
+    <!-- الصفحة الأولى -->
+    <div id="page1" class="container page active">
+        <h1>محمد صلاح محمود محمد</h1>
+        <p>من السودان - مواليد المملكة العربية السعودية</p>
+        <p>تاريخ الميلاد: 19 نوفمبر 2002</p>
+        <p>رقم الهاتف: 01282936046</p>
+        <p>البريد الإلكتروني: <a href="mailto:hmoode1salah2@gmail.com">hmoode1salah2@gmail.com</a></p>
+        <p><a href="https://wa.me/message/PQELHOX5YEQYK1" target="_blank">راسلني على واتساب</a></p>
+        <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="صورة برمجة" class="main-img">
+        <p><a href="#" onclick="goToPage(2)" class="link-btn">يدرس في جامعة المشرق</a></p>
+    </div>
+
+    <!-- الصفحة الثانية -->
+    <div id="page2" class="container page">
+        <h1>طالب بجامعة المشرق</h1>
+        <h2>كلية علوم الحاسوب</h2>
+        <h3>قسم تقنية المعلومات</h3>
+        <ul>
+            <li>تطوير واجهات المستخدم (UI/UX)</li>
+            <li>برمجة مواقع باستخدام HTML, CSS, JavaScript</li>
+            <li>تحليل البيانات</li>
+            <li>البرمجة بلغة Python و Java</li>
+            <li>إدارة قواعد البيانات MySQL</li>
+            <li>أمن المعلومات</li>
+            <li>العمل الجماعي وحل المشكلات</li>
+            <li>تصميم باستخدام Figma و Canva</li>
+            <li>التعلم الذاتي عبر الإنترنت</li>
+        </ul>
+        <p><a href="#" onclick="goToPage(1)" class="link-btn">العودة إلى الصفحة الأولى</a></p>
+    </div>
+
+    <script>
+        function goToPage(pageNumber) {
+            // تغيير الخلفية حسب الصفحة
+            if (pageNumber === 1) {
+                document.getElementById("body").style.backgroundImage = "url('https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif')";
+                document.getElementById("page1").classList.add("active");
+                document.getElementById("page2").classList.remove("active");
+            } else {
+                document.getElementById("body").style.backgroundImage = "url('https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif')";
+                document.getElementById("page2").classList.add("active");
+                document.getElementById("page1").classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>موقع محمد صلاح</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #111;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #00adb5;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .link-btn:hover {
+            background-color: #007b7f;
+        }
+
+        img.main-img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        ul {
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body id="body" style="background-image: url('https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif');">
+
+    <!-- الصفحة الأولى -->
+    <div id="page1" class="container page active">
+        <h1>محمد صلاح محمود محمد</h1>
+        <p>من السودان - مواليد المملكة العربية السعودية</p>
+        <p>تاريخ الميلاد: 19 نوفمبر 2002</p>
+        <p>رقم الهاتف: 01282936046</p>
+        <p>البريد الإلكتروني: <a href="mailto:hmoode1salah2@gmail.com">hmoode1salah2@gmail.com</a></p>
+        <p><a href="https://wa.me/message/PQELHOX5YEQYK1" target="_blank">راسلني على واتساب</a></p>
+        <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="صورة برمجة" class="main-img">
+        <p><a href="#" onclick="goToPage(2)" class="link-btn">يدرس في جامعة المشرق</a></p>
+    </div>
+
+    <!-- الصفحة الثانية -->
+    <div id="page2" class="container page">
+        <h1>طالب بجامعة المشرق</h1>
+        <h2>كلية علوم الحاسوب</h2>
+        <h3>قسم تقنية المعلومات</h3>
+        <ul>
+            <li>تطوير واجهات المستخدم (UI/UX)</li>
+            <li>برمجة مواقع باستخدام HTML, CSS, JavaScript</li>
+            <li>تحليل البيانات</li>
+            <li>البرمجة بلغة Python و Java</li>
+            <li>إدارة قواعد البيانات MySQL</li>
+            <li>أمن المعلومات</li>
+            <li>العمل الجماعي وحل المشكلات</li>
+            <li>تصميم باستخدام Figma و Canva</li>
+            <li>التعلم الذاتي عبر الإنترنت</li>
+        </ul>
+        <p><a href="#" onclick="goToPage(1)" class="link-btn">العودة إلى الصفحة الأولى</a></p>
+    </div>
+
+    <script>
+        function goToPage(pageNumber) {
+            // تغيير الخلفية حسب الصفحة
+            if (pageNumber === 1) {
+                document.getElementById("body").style.backgroundImage = "url('https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif')";
+                document.getElementById("page1").classList.add("active");
+                document.getElementById("page2").classList.remove("active");
+            } else {
+                document.getElementById("body").style.backgroundImage = "url('https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif')";
+                document.getElementById("page2").classList.add("active");
+                document.getElementById("page1").classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
